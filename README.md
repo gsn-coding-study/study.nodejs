@@ -7,6 +7,8 @@
 * [src 모던 웹을 위한 Node.js 프로그래밍](https://github.com/rintiantta/hanbit.modern.node)
 * [nodebeginner](http://www.nodebeginner.org/)
 * [wiki Nodejs](http://en.wikipedia.org/wiki/Nodejs)
+* [나무위키 Javascript](https://namu.wiki/w/JavaScript)
+* [나무위키 NodeJs](https://namu.wiki/w/Node.js)
 * [api nodejs](http://nodejs.org/docs/latest/api/)
 * [데렉 시버스 운동이 시작되는 방법](http://www.ted.com/talks/lang/ko/derek_sivers_how_to_start_a_movement.html)
 * [github octoberskyjs](https://github.com/octoberskyjs/home)
