@@ -1,5 +1,6 @@
 # nodejs study
 ---
+
 ## references
 * [생활코딩 nodejs 스터디](https://github.com/netpyoung/study.nodejs)
 * [모던 웹을 위한 Node.js 프로그래밍](http://www.hanb.co.kr/book/look.html?isbn=978-89-7914-888-6)
@@ -9,9 +10,9 @@
 * [api nodejs](http://nodejs.org/docs/latest/api/)
 * [데렉 시버스 운동이 시작되는 방법](http://www.ted.com/talks/lang/ko/derek_sivers_how_to_start_a_movement.html)
 * [github octoberskyjs](https://github.com/octoberskyjs/home)
-* [온라인저지](https://www.acmicpc.net/)
-
+* 온라인저지 [백준](https://www.acmicpc.net/) [알고스팟](https://algospot.com/judge/problem/list/)
 ---
+
 ## 스터디 정보
 
 * 수준
