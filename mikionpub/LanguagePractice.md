@@ -1,4 +1,7 @@
-## 2017.1.11 Language Practice Tracker
+# Language Practice Tracker
+
+
+## 2017.1.11 
 
 * 현재 공부하고 있는 교재는 [모던 웹을 위한 Node.js 프로그래밍](http://www.hanb.co.kr/book/look.html?isbn=978-89-7914-888-6) 이다.
 * 교재의 목표는 웹페이지를 구성하는 것임.
