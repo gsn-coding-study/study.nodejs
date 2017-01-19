@@ -27,7 +27,9 @@
 * 프레임웍이 뭘까?
 * JS에서 하는 역할과 CSS 에서 하는 역할이 구체적으로 뭘까? 꼭 따로 개발해야 하는걸까?
 * HTML 내에 JavaScript가 들어가는데, 왜 독단적으로 쓰지 못하는걸까?
+  * 스크립트에다가 쓰는거랑 .js로 작성해서 인크루드 하는 방법.
 * 그럼 HTML 문법은 자바스크립트 없이는 구현이 안되는걸까?
+* 반응형 웹 : 미디어 쿼리
 
 ## Document Object Model (DOM)
 * HTML, XML 문서의 프로그래밍 interface 이다. DOM은 문서의 구조화된 표현(structured representation)을 제공하며 프로그래밍 언어가 DOM 구조에 접근할 수 있는 방법을 제공하여 그들이 문서 구조, 스타일, 내용 등을 변경할 수 있게 돕는다. DOM 은 구조화된 nodes와 property 와 method 를 갖고 있는 objects로 문서를 표현한다. 이들은 웹 페이지를 스크립트 또는 프로그래밍 언어들에서 사용될 수 있게 연결시켜주는 역할을 담당한다.
@@ -40,3 +42,10 @@
   * nodeList : nodeList 는 elements 의 배열
   * attribute : attribute 가 member 에 의해 리턴되는 것은, attribute 에 대한 특별한 인터페이스를 노출하는 object reference 이다. attributes 는 DOM 에서 elements 와 같은 nodes 이다. elements 만큼 많이 사용되지는 않는다.
   * namedNodeMap : array 와 유사하지만 items 은 name 또는 index 에 의해 접근 가능
+
+
+## 2017-01-19
+### 다음 주 숙제
+* 
+
+### 공부하고 느낀 점
