@@ -1,3 +1,5 @@
+'use strict';
+
 function Node(key, value) {
   this.key = key;
   this.value = value;
