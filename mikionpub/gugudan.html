@@ -1,0 +1,34 @@
+<html>
+<head>
+  <script type="text/javascript"></script>
+</head>
+<body>
+  <center>
+  <p>계산하고 싶은 구구단 수를 입력 해 주세요</br></p>
+    <input id = "input_txt" type="text"></input>
+
+
+<!--
+<button onclick="input()">입력받기</button>
+-->
+<button onclick="output()">계산하기</button></br>
+<textarea id="output"></textarea>
+</center>
+
+  <script>
+
+  function output(){
+    var input = document.getElementById("input_txt").value;
+
+    for (var multiple = 1; multiple < 10; multiple++){
+      //document.write(input + "X" + multiple + "=" + input*multiple + "\n");
+    var out = input+"X"+multiple+"="+input*multiple+"\n";
+
+    document.getElementById("output").value = out;
+
+    }
+  }
+
+</script>
+</body>
+</html>
