@@ -73,3 +73,9 @@
 * 생활코딩 자바스크립트 편을 보고는 절대 구구단 못만듦.
   * 왜냐하면 DOM 활용 설명도 없고, 바로 JQuery를 쓰라고 알려주기 때문...
   * 값을 입력받는 구문에 대한 설명이 없음
+* 참고 한 코드 [어떤 사람 블로그](http://m.blog.naver.com/jurion/220152758069).
+  * input function 삭제
+  * '계산하기' 버튼 생성 후 클릭 할 경우 output() function 실행하도록 함
+  * output function 내에 document.getElementById 구문을 이용하여 입력받은 값을 input 변수에 입력
+  * 반복문을 이용 해 구구단 계산
+  * 계산 된 값을 output에 입력하고 입력 된 값을 textarea에 출력

@@ -8,18 +8,18 @@
     <input id = "input_txt" type="text"></input>
 
 <button onclick="output()">계산하기</button></br>
-<textarea id="output"></textarea>
+<textarea id="output_txt" type="text"></textarea>
 </center>
 
   <script>
 
     function output(){
     var input = document.getElementById("input_txt").value;
+    var out
 
     for (var multiple = 1; multiple < 10; multiple++){
-    var out = input+"X"+multiple+"="+input*multiple+"\n";
-
-    document.getElementById("output").value = out;
+      out += input+"X"+multiple+"="+input*multiple+"\n";
+      document.getElementById("output_txt").value = out;
 
     }
   }
