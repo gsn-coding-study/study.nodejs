@@ -1,0 +1,120 @@
+
+General
+Command
+Mac OS X
+Windows
+Preferences/Settings
+cmd-,
+ctrl-,
+Command Palette
+shift-cmd-p
+shift-ctrl-p
+Open File (Fuzzy)
+cmd-p
+ctrl-p
+Browse Open Files
+cmd-b
+ctrl-b
+Grammar Selector
+ctrl-shift-l
+ctrl-shift-l
+Markdown Preview
+ctrl-shift-m
+ctrl-shift-m
+Key Binding Resolver
+cmd-.
+ctrl-.
+Toggle Tree View
+cmd-k cmd-b
+ctrl-k ctrl-b
+Reload Atom
+ctrl-alt-cmd-l
+alt-ctrl-r
+Open Link
+ctrl-shift-o
+
+Toggle Developer Tools
+alt-cmd-i
+ctrl-alt-i
+Show Available Snippets
+alt-shift-s
+alt-shift-s
+
+Editing
+Command
+Mac OS X
+Windows
+Duplicate Lines
+shift-cmd-d
+ctrl-shift-d
+Delete Line
+ctrl-shift-k
+ctrl-shift-k
+Move Line Up
+ctrl-cmd-up
+ctrl-up
+Move Line Down
+ctrl-cmd-down
+ctrl-down
+Find/Replace
+cmd-f
+ctrl-f
+Find Next
+cmd-g
+F3
+Find Previous
+shift-cmd-g
+shift-F3
+Find in Project
+shift-cmd-f
+ctrl-shift-f
+Go To Line
+ctrl-g
+ctrl-g
+Go To Matching Bracket
+ctrl-m
+ctrl-m
+Select Line
+cmd-l
+ctrl-L
+Toggle Comment
+cmd-/
+ctrl-/
+Column Selection
+ctrl-shift-up/down
+ctrl-Alt+Up/Down
+
+Window Management
+Command
+Mac OS X
+Windows
+New File
+cmd-n
+ctrl-n
+New Window
+shift-cmd-n
+ctrl-shift-n
+Open
+cmd-o
+ctrl-o
+Open Folder
+cmd-shift-o
+ctrl-shift-o
+Add Project Folder
+
+ctrl-alt-o
+Save
+cmd-s
+ctrl-s
+Save As
+shift-cmd-s
+ctrl-shift-s
+Save All
+alt-cmd-s
+
+Close Tab
+cmd-w
+ctrl-w
+Close Window
+shift-cmd-w
+ctrl-shift-w
