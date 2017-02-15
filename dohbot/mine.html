@@ -8,7 +8,7 @@
       display: table;
       cursor: pointer
     }
-    
+
     #field span {
       display: table-cell;
       width: 20px;
@@ -16,7 +16,7 @@
       padding: 0px;
       border: 1px solid black;
     }
-    
+
     #field div {
       display: table-row;
     }
@@ -96,7 +96,7 @@
       function trackingAround(m, id) {
         if (m.shown[id])
           return;
-
+        console.log("id : " + id);
         var adjs = getAdjacentIdxs(m, id);
 
         var count = 0;
@@ -123,10 +123,10 @@
         var adjs = [i - w, i + w]; //top,bottom
 
         if (i % w != 0) { //left side
-          adjs.push(i - w - 1, i - 1, i + w - 1);          
+          adjs.push(i - w - 1, i - 1, i + w - 1);
         }
-        if (i % w != w - 1) { // right side          
-          adjs.push(i - w + 1, i + 1, i + w + 1);          
+        if (i % w != w - 1) { // right side
+          adjs.push(i - w + 1, i + 1, i + w + 1);
         }
         var idx = [];
         for (var i in adjs) {
@@ -154,7 +154,7 @@
       documentReady(function () {
         var m = createModel(16, 40);
         var field = document.getElementById('field');
-        drawField(field, m);        
+        drawField(field, m);
         addEvent(field, 'click', function (e) {
           if (!m.playing)
             return;
