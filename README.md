@@ -5,7 +5,7 @@
 ## epilogue
 
 * dohbot: `nodejs 스터디로 시작해서 html 스터디로 마침.`
-* love:
+* love:`nodejs 스터디로 시작해서 html 스터디로 마치지도 못함.`
 * mikionpub:
 
 ## references
