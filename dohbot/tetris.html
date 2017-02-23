@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0d Transitional//EN">
+<html>
+
+<head>
+  <title>Tetris</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Tetris</h1>
+    <div id="field" />
+  </center>
+  <script>
+    //<!--
+    (function () {
+      /**
+       * vanilla javascript @see https://gist.github.com/joyrexus/7307312
+       */
+      function documentReady(cb) {
+        document.addEventListener('DOMContentLoaded', cb);
+      }
+
+      function addEvent(el, event, cb, isCapture) {
+        if (window.addEventListener) {
+          el.addEventListener(event, cb, isCapture);
+        } else if (window.attachEvent) {
+          el.attachEvent("on" + event, cb);
+        } else {
+          el["on" + event] = cb;
+        }
+      }
+
+      var pieces = [
+        [1, 1, 1, 1], // I
+        [1, 1, 1, 0, 1], // L
+        [0, 1, 1, 1, 0, 0, 0, 1], // J
+        [1, 1, 0, 0, 1, 1], //O
+        [0, 1, 1, 0, 1, 1], //S
+        [1, 1, 1, 0, 0, 1], //T
+        [1, 1, 0, 0, 0, 1, 1] //Z
+      ];
+      var tetris = {
+        playing: true,
+        ths: [],
+        moving: [],
+        stacked: [],
+        width: 10,
+        height: 20
+      }
+
+      function keyPress(e) {
+        var updated = false;
+        switch (e.keyCode) {
+          case 37: //left
+            updated = movePiece(-1, 0);
+            break;
+          case 38: //right
+            updated = movePiece(1, 0);
+            break;
+          case 39: //rotate
+            updated = movePiece(0, 0, true);
+            break;
+          case 40: //down
+            updated = movePiece(0, 1);
+            break;
+          default:
+        }
+        if (updated) draw();
+      }
+
+      function draw() {
+        if (!tetris.playing)
+          return;
+      }
+
+      function addPiece() {
+        var idx = Math.floor(Math.random() * pieces.length);
+        var piece = pieces[idx];
+        for (var i in tetris.moving)
+          tetris.moving[i] = 0;
+
+        var s = Math.floor(tetris.moving.length / 3);
+        for (var i = 0; i < 4; ++i) {
+          tetris.moving[s + i] = piece[i];
+        }
+        s += tetris.moving.length;
+        for (var i = 4; i < pieces.length; ++i) {
+          tetris.moving[s + i] = piece[i];
+        }
+      }
+
+      function movePiece(x, y, rotate) {
+        
+
+
+
+      }
+
+      function arrange() {
+        //stack piece
+        for (var i in tetris.moving)
+          if (0 < tetris.moving[i])
+            tetris.stacked[i] = tetris.moving[i];
+        //clear lines
+
+        for (var i = 0; i < tetris.stacked.length; i += tetris.width) {
+          var filled = 0;
+          for (var j = 0; j < tetris.width; ++j) {
+            filled += tetris.stacked[i + j];
+          }
+
+          if (filled != tetris.width)
+            continue;
+
+          for (var j = 0; j < tetris.width; ++j) {
+            tetris.stacked[i + j] = -1;
+          }
+        }
+        var i = tetris.stacked.length - tetris.width;
+        do {
+
+          i -= tetris.width;
+
+        }
+        while (0 <= i);
+
+
+      }
+
+      function checkEnd() {
+
+      }
+
+      function tick(e) {
+        if (movePiece(0, 1))
+          return;
+
+        arrange();
+        addPiece();
+
+        if (!checkEnd())
+          return;
+
+        tetris.playing = false;
+        for (var i in tetris.ths)
+          clearInterval(tetris.ths[i]);
+
+        altert('End');
+      }
+
+      function init() {
+        var size = tetris.width * tetris.height;
+        for (var i = 0; i < size; ++i) {
+          tetris.moving[i] = 0;
+          tetris.stacked[i] = 0;
+        }
+        addPiece();
+        tetris.ths = [setInterval(draw, 50), setInterval(tick, 500)];
+      }
+
+      documentReady(function () {
+        addEvent(document, 'keypress', keypress);
+        init();
+      });
+    })();
+    //-->
+  </script>
+</body>
+
+</html>
